@@ -12,6 +12,7 @@
     <!-- Packages needed to run but not to build-->
     <run_depend>robotiq_85_msgs</run_depend>
     <run_depend>robotiq_85_description</run_depend>
+    <run_depend>python-serial</run_depend>
 
 	<export>
 	</export>
