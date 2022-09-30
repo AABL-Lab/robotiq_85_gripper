@@ -1,7 +1,8 @@
 import serial
-from gripper_io import GripperIO
-from modbus_crc import verify_modbus_rtu_crc
 import array
+
+from .gripper_io import GripperIO
+from .modbus_crc import verify_modbus_rtu_crc
 
 class Robotiq85Gripper:
     def __init__(self,num_grippers=1,comport='/dev/ttyUSB0',baud=115200):

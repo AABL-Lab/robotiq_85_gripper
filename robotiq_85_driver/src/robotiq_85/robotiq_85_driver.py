@@ -52,10 +52,9 @@ import numpy as np
 
 import rospy
 from sensor_msgs.msg import JointState
-
-from robotiq_85_gripper import Robotiq85Gripper
 from robotiq_85_msgs.msg import GripperCmd, GripperStat
 
+from .robotiq_85_gripper import Robotiq85Gripper
 
 class Robotiq85Driver:
     def __init__(self):

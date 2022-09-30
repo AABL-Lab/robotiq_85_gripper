@@ -47,9 +47,10 @@ arising out of or based upon:
 
  \Platform: Linux/ROS Indigo
 --------------------------------------------------------------------"""
-from modbus_crc import compute_modbus_rtu_crc,verify_modbus_rtu_crc
 import numpy as np
 import array
+
+from .modbus_crc import compute_modbus_rtu_crc,verify_modbus_rtu_crc
 
 ACTION_REQ_IDX = 7
 POS_INDEX      = 10
