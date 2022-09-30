@@ -30,7 +30,6 @@ class Robotiq85Gripper:
         try:
             self.ser.write(self._gripper[dev].act_cmd_bytes)
             rsp = self.ser.read(8)
-            rsp = [ord(x) for x in rsp]
             if (len(rsp) != 8):
                 print("response wrong length")
                 return False
@@ -40,7 +39,6 @@ class Robotiq85Gripper:
 
             self.ser.write(self._gripper[dev].stat_cmd_bytes)
             rsp = self.ser.read(21)
-            rsp = [ord(x) for x in rsp]
             if (len(rsp) != 21):
                 print("response wrong length")
                 return False
